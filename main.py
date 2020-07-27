@@ -72,9 +72,8 @@ def generate_haiku():
 
 
 if __name__ == "__main__":
-    haiku_text = generate_haiku() + '\n#haiku'
+    haiku_text = generate_haiku()
     if len(haiku_text) >= 280:
         exit(1)
     print(haiku_text)
-    tweet(generate_haiku() + '\n#haiku')
-
+    tweet(haiku_text)
